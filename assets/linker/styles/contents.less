@@ -1,0 +1,78 @@
+.contents-page {
+
+img.bg {
+  // set rules to fill bkgd
+  min-height: 100%;
+  min-width: 1024px;
+  z-index: -100;
+
+  // set up proportionate scaling
+  width: 100%;
+  height: auto;
+
+  // set up positioning
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  img.bg {
+    left: 50%;
+    margin-left: -512px; // 50%
+  }
+}
+
+// upper container
+h1 {
+    color: #ffffff;
+    display: block;
+    font-size: 3em;
+    margin-bottom: 0;
+    margin-top: 15%;
+    text-align: center;
+  }
+
+  p {
+    color: #ffffff;
+    font-family: 'Droid Serif', serif;
+    font-size: 1.3em;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 10%;
+    text-align: center;
+  }
+
+  // where chapters start
+  .white-container {
+    background-color: #ffffff;
+    width: 100%;
+    min-height: 100%;
+
+    .chapter-container {
+      padding: 50px 0;
+      width: 40%;
+      margin: 0 auto;
+
+      .chapter {
+
+        &:first-child {
+          margin-top: 0px;
+        }
+
+        margin-top: 50px;
+      }
+
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
