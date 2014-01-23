@@ -50,57 +50,70 @@ html {
     margin-top: 5px;
   }
 
-.index-page {
+  .index-page {
 
-  img.bg {
-    // set rules to fill bkgd
-    min-height: 100%;
-    min-width: 1024px;
-    z-index: -100;
-
-    // set up proportionate scaling
-    width: 100%;
-    height: auto;
-
-    // set up positioning
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
-
-  @media screen and (max-width: 1024px) {
     img.bg {
-      left: 50%;
-      margin-left: -512px; // 50%
+      // set rules to fill bkgd
+      min-height: 100%;
+      min-width: 1024px;
+      z-index: -100;
+
+      // set up proportionate scaling
+      width: 100%;
+      height: auto;
+
+      // set up positioning
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    
+
+    p {
+      color: #ffffff;
+      font-family: 'Droid Serif', serif;
+      font-size: 1.3em;
+      margin: 0;
+      margin-top: 5px;
+      text-align: center;
+    }
+
+    .continue-button {
+      border: 1px solid #ffffff;
+      border-radius: 17px;
+      color: #ffffff;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 0.9em;
+      padding: 5px 5px;
+      text-align: center;
+      margin: 25px auto;
+      opacity: 0.8;
+      width: 90px;
+
+      &:hover {
+        cursor: pointer;
+        opacity: 1;
+      }
+    }
+
+    // Media Queries
+    @media screen and (max-width: 1024px) {
+      img.bg {
+        left: 50%;
+        margin-left: -512px; // 50%
+      }
+    }
+    @media screen and (max-width: 420px) {
+      h1 {
+        font-size: 2.5em;
+        margin-top: 50%;
+      }
+      p {
+        font-size: 1em;
+      }
+      .continue-button {
+        padding: 10px 10px;
+      }
     }
   }
-  
-
-  p {
-    color: #ffffff;
-    font-family: 'Droid Serif', serif;
-    font-size: 1.3em;
-    margin: 0;
-    margin-top: 5px;
-    text-align: center;
-  }
-
-  .continue-button {
-    border: 1px solid #ffffff;
-    border-radius: 17px;
-    color: #ffffff;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.9em;
-    padding: 5px 5px;
-    text-align: center;
-    margin: 25px auto;
-    opacity: 0.8;
-    width: 90px;
-
-    &:hover {
-      cursor: pointer;
-      opacity: 1;
-    }
-  }
-}
 }
